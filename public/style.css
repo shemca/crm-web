@@ -1,11 +1,13 @@
 @import url(//fonts.googleapis.com/css?family=Lobster);
 @import url(//fonts.googleapis.com/css?family=Merriweather);
 @import url(//fonts.googleapis.com/css?family=Amatic SC);
-html { background: url(//www.averillsolutions.com/wp-content/uploads/2014/02/iStock_000019458423_Medium-Toronto1.jpg) no-repeat center center fixed;
--webkit-background-size: cover; 
--moz-background-size: cover; 
--o-background-size: cover;
-background-size: cover;}
+
+html { background: url(//www.averillsolutions.com/wp-content/uploads/2014/02/iStock_000019458423_Medium-Toronto1.jpg) 
+	no-repeat center center fixed;
+	-webkit-background-size: cover; 
+	-moz-background-size: cover; 
+	-o-background-size: cover;
+	background-size: cover;}
 
 h1 {color: #515584; font-size: 70px; 
 	font-family: 'Lobster'; 
@@ -88,69 +90,29 @@ ul {
 
 form {font-family: 'Merriweather'}
 
-#contact_form {text-align: center;}
+.style1 {
+	border-collapse: collapse;
+	margin: auto;
+	
+	text-align:center;
+width:75%;}
 
-#container4 {
-	clear:left;
-	float:left;
-	width:100%;
-	overflow:hidden;
-	 /* column 4 background colour */
-}
-#container3 {
-	clear:left;
-	float:left;
-	width:100%;
-	position:relative;
-	right:25%;
-	 /* column 3 background colour */
-}
-#container2 {
-	clear:left;
-	float:left;
-	width:100%;
-	position:relative;
-	right:25%;
-	 /* column 2 background colour */
-}
-#container1 {
-	float:left;
-	width:100%;
-	position:relative;
-	right:25%;
-	 /* column 1 background colour */
-}
-#col1 {
-	float:left;
-	width:21%;
-	position:relative;
-	left:77%;
-	overflow:hidden;
-}
-#col2 {
-	float:left;
-	width:21%;
-	position:relative;
-	left:81%;
-	overflow:hidden;
-}
-#col3 {
-	float:left;
-	width:21%;
-	position:relative;
-	left:85%;
-	overflow:hidden;
-}
-#col4 {
-	float:left;
-	width:21%;
-	position:relative;
-	left:89%;
-	overflow:hidden;
-}
-/* --> */
-    </style>
+.style1 td, .style1 th { 
+border: 1px solid #999;
+padding:0.5rem;
+text-align: center;
 
-[type]
+}
 
-td {text-align: center;}
+.style1 th {font-family: 'Merriweather';}
+.style1 td {font-family: 'Merriweather';}
+.style1 tr:hover {background-color: #dba095;}
+
+a:link {text-decoration: none;
+font-family: 'Merriweather';
+}
+
+button {text-align: center;
+font-family: 'Merriweather';}
+.style2 {text-align: center;}
+

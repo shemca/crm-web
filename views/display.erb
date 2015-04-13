@@ -1,5 +1,5 @@
 <h1>All Contacts</h1>
-<table>
+<table class="style1">
 <thead>
 	<tr>
 	<th>Name</th>
@@ -7,16 +7,19 @@
 	<th>Notes</th>
 	</tr>
 </thead>
+<tbody>
 <% @contacts.each do |contact| %>
 	
 	<tr>
 	  
 	  <td><a href="/contacts/<%= contact.id %>">
 	  <%= contact.first_name %> 
-	  <%= contact.last_name %></td>
-    <td><a href="/contacts/<%= contact.id %>"><%= contact.email %> </td>
-	  <td><a href="/contacts/<%= contact.id %>"><%= contact.note %> </td>
+	  <%= contact.last_name %></a></td>
+    <td><a href="/contacts/<%= contact.id %>"><%= contact.email %></a></td>
+	  <td><a href="/contacts/<%= contact.id %>"><%= contact.note %></a></td>
 	</tr>
 <% end %>
+
+</tbody>	
 
 </table>
