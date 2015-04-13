@@ -3,7 +3,7 @@ class Rolodex
 
 	def initialize
 		@contacts = []
-		@id = 1
+		@id = 1000
 	end
 
 	def add_contact(contact)
@@ -26,16 +26,15 @@ class Rolodex
 				contact.id == contact_id
 			end
 	end
-
+	end
+	
 	def all_attrs(attr_name)
 		@contacts.map { |c| c.send(attr_name) } 
 	end
 	
-	def list
+	def remove_contact(contact)
+		@contacts.delete(contact)
 
 
 	end
-end
-
-
 end
